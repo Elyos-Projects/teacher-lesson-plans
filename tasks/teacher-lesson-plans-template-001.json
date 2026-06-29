@@ -1,0 +1,34 @@
+{
+  "id": "teacher-lesson-plans-template-001",
+  "title": "Canonical lesson-plan schema + authoring template",
+  "project": "teacher-lesson-plans",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "oer", "k12", "open-content"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Open Educational Resources are abundant but rarely teachable as-is: a teacher still has to write objectives, align to standards, sequence the period, build formative checks, differentiate, and attribute sources. Before authoring any specific lesson plan, the project needs one canonical, structured lesson-plan model and a reusable authoring template that every plan (and every later exporter and metadata emitter) projects from. The deliverable is a lesson plan wrapping vetted OER, never the source content itself.",
+  "objective": "Create the canonical lesson-plan schema and the reusable Markdown + YAML front-matter authoring template that all per-plan tasks, validators, and exporters will use.",
+  "acceptanceCriteria": [
+    "Canonical model documents every field: title, gradeBand, subject, durationMinutes, objectives[], standards[] {framework, code, descriptor?, alignmentRationale, descriptorLicenseOk}, materials[], priorKnowledge[], procedure[] {phase, minutes, teacherDoes, studentsDo}, formativeChecks[], differentiation {support[], extension[], languageSupports[], udlNotes}, accessibility {plainLanguage, altTextPresent, structureNotes}, answerKey?, sources[] {title, author, url, license {id, url, permitsDerivatives, shareAlike, nonCommercial, snapshotRef}, attributionText}, outputLicense, provenance, sensitiveSubject {flag, reason, framing}.",
+    "Markdown + YAML front-matter template covers all model fields with inline authoring guidance, including UDL/differentiation and a per-source attribution block.",
+    "Template explicitly states the deliverable is a lesson plan wrapping OER (not the source content), and defaults the content license to CC-BY-4.0 (CC-BY-SA-4.0 when wrapping share-alike sources).",
+    "At least one filled-in worked example skeleton is included to guide contributors.",
+    "pnpm build && pnpm test && pnpm lint pass for any committed tooling; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\teacher-lesson-plans\\PLAN.md",
+    "Creative Commons license suite (CC0, CC-BY, CC-BY-SA, CC-BY-NC) and compatibility guidance",
+    "schema.org / LRMI LearningResource and alignmentObject",
+    "UDL (Universal Design for Learning) guidelines",
+    "OER sources: OpenStax, CK-12, OER Commons, Curriki, Siyavula"
+  ],
+  "output": "A canonical lesson-plan schema definition plus a reusable Markdown + YAML authoring template, committed to the project repo and ready for reuse by all per-plan authoring, validation, and export tasks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
