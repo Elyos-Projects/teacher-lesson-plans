@@ -1,0 +1,34 @@
+{
+  "id": "teacher-lesson-plans-funded-026",
+  "title": "Funded-lane pilot to accelerate prioritized backlog",
+  "project": "teacher-lesson-plans",
+  "type": "writing",
+  "lane": "funded",
+  "priority": "low",
+  "domain": ["education", "oer", "k12", "open-content", "lesson-plan", "funded"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The donated lane relies on volunteer contributors and spare AI capacity. For time-sensitive or high-priority backlog items, a funded lane could accelerate delivery by running metered API execution against donor escrow funds with a hard per-task budget cap. This backlog task represents a potential funded-lane pilot: identifying which backlog items are best suited to funded execution, structuring them with explicit budget caps, and running one or more tasks through the funded lane to validate the model. The funded lane requires a hard per-task budget cap and must never exceed the task's escrow.",
+  "objective": "Identify the highest-priority backlog items suited to funded execution, design the funded-task structure with hard budget caps, and author or commission at least one deliverable through the funded lane with cost evidence recorded.",
+  "acceptanceCriteria": [
+    "At least one backlog task is identified and scoped for funded execution: the task, the rationale for funded-lane priority, and the hard per-task budget cap are documented.",
+    "The funded task is executed within the declared fundedBudgetUsd cap; cost evidence (API usage or equivalent) is recorded and committed to the outcome ledger.",
+    "The deliverable produced by the funded task passes all applicable gates (license gate, pedagogy/standards review gate) and CI checks — funded execution does not waive quality requirements.",
+    "The funded-lane pilot report documents: actual cost vs. cap, quality outcome, cycle-time vs. donated-lane baseline, and a recommendation on whether and how to expand the funded lane.",
+    "No secrets, tokens, or API keys are committed to the repo; cost evidence is recorded as aggregated numbers only."
+  ],
+  "resources": [
+    "Elyos CLAUDE.md — funded lane rules (hard per-task budget cap, never exceed escrow)",
+    "PLAN.md — §Sustainability & maintenance (funded lane note)",
+    "teacher-lesson-plans-template-001 — canonical lesson-plan schema and template",
+    "Anthropic API — funded execution platform"
+  ],
+  "output": "A committed funded-lane pilot report with: selected task, budget cap, actual cost evidence, deliverable produced (meeting all quality gates), and a funded-lane expansion recommendation.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "fundedBudgetUsd": 50.00
+}

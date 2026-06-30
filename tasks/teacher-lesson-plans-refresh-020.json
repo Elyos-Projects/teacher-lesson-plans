@@ -1,0 +1,34 @@
+{
+  "id": "teacher-lesson-plans-refresh-020",
+  "title": "Staleness/refresh process (links, standards, sources)",
+  "project": "teacher-lesson-plans",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "oer", "tooling", "maintenance", "sustainability"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Lesson plans can go stale: OER source URLs break (link rot), standards are revised (new CCSS or NGSS editions), and source OER content is updated. A stale plan that silently contains a dead link, a retired standard code, or outdated content undermines teacher trust and may violate attribution requirements. Link-rot and standards revision are high-probability long-term risks identified in PLAN.md. The snapshot checker (task-009) captures evidence at the time of authoring; this task creates the ongoing process to detect and flag staleness, and to spawn refresh tasks when plans need updating.",
+  "objective": "Define and document the staleness detection and refresh process: how dead source links, revised standards, and updated source OER are detected, how stale plans are flagged (not silently left wrong), and how refresh tasks are spawned and owned.",
+  "acceptanceCriteria": [
+    "Staleness detection process covers three categories: (1) dead source links — a periodic link-check (manual or automated) detects 404/redirect errors in plan sources and flags the plan; (2) revised standards — a process for monitoring standards-body announcements and checking affected plans; (3) updated source OER — a process for checking whether the source material has materially changed since the snapshot.",
+    "Process specifies: how often each check runs (e.g. quarterly for links, annually for standards), who owns each check, and what the output is (a flagged plan + a spawned maintenance task).",
+    "Stale plans are explicitly flagged (not silently left wrong): a flag in the plan front-matter or the repo issue tracker, with the reason and the assigned refresh owner.",
+    "The process for spawning a refresh task is defined: what information a refresh task must contain (which plan, which staleness type, what needs updating).",
+    "The snapshot checker (teacher-lesson-plans-snapshot-009) is identified as the dependency: its Wayback URLs provide the baseline for link-rot detection.",
+    "Document is committed to the repo and serves as the authoritative reference for the staleness/refresh process."
+  ],
+  "resources": [
+    "teacher-lesson-plans-snapshot-009 — license snapshot + attribution checker (provides link baselines)",
+    "PLAN.md — §Risks & mitigations (Source link rot / standards revisions risk)",
+    "PLAN.md — §Sustainability & maintenance (Refresh section)",
+    "Wayback Machine CDX API — for checking archived vs. current URL status"
+  ],
+  "output": "A committed staleness/refresh process document covering link-rot detection, standards-revision monitoring, source-OER update checking, flag format, refresh-task spawning protocol, and ownership assignments.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

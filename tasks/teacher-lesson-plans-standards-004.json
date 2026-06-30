@@ -1,0 +1,38 @@
+{
+  "id": "teacher-lesson-plans-standards-004",
+  "title": "Standards-alignment model + framework-license policy",
+  "project": "teacher-lesson-plans",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "oer", "k12", "standards", "metadata", "compliance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every lesson plan in this project declares the learning standards it meets. Standards alignment is a first-class, verifiable property — not a vague label — but standards frameworks themselves have their own copyright and license terms that are a common trap: descriptor text may not be freely reproducible. Additionally, alignment must be honest: fabricated or sloppy alignments erode teacher trust and are a fundamental quality defect. The project needs a canonical machine-readable alignment model and an explicit per-framework licensing policy before any plan is authored, so contributors know exactly what to record, how to record it, and what framework text they may or may not reproduce.",
+  "objective": "Define the machine-readable standards-alignment model and the per-framework licensing policy so all lesson plans use consistent, honest, legally safe alignment records that can be emitted as CASE/LRMI metadata later.",
+  "acceptanceCriteria": [
+    "Defines the machine-readable alignment structure: framework (e.g. CCSS, NGSS), stable code (e.g. CCSS.ELA-LITERACY.RI.5.1), optional short descriptor, alignmentRationale (human-written justification), and descriptorLicenseOk boolean.",
+    "States the no-fabrication rule: if a plan cannot be honestly aligned to a cited standard, it ships unaligned and labelled as such — never with a false or speculative alignment.",
+    "Covers CCSS (Common Core State Standards) framework license: © NGA Center and CCSSO; public license permits use/reproduction with required attribution notice; specifies which attribution notice is required and the limit on descriptor reproduction.",
+    "Covers NGSS framework: Creative Commons license by lead states; trademark-use guidance (no implied endorsement); attribution terms.",
+    "Defines the default policy for state/national frameworks: code + link only (no descriptor reproduction) until that framework's license is individually verified; describes the verification step.",
+    "Specifies that alignment is emittable as CASE-style (1EdTech Competencies & Academic Standards Exchange) and LRMI alignmentObject metadata, with pinned spec versions recorded in specVersions.",
+    "The document is the authoritative reference for the CASE/LRMI emitter task (teacher-lesson-plans-casemeta-011) and all plan-authoring tasks.",
+    "Document is committed to the repo; no standards descriptor text is reproduced beyond what the relevant framework license verifiably permits."
+  ],
+  "resources": [
+    "PLAN.md — §Data, licensing & compliance (Standards frameworks section)",
+    "teacher-lesson-plans-template-001 — canonical schema (standards[] field)",
+    "CCSS public license and attribution requirements — https://www.corestandards.org/public-license/",
+    "NGSS license and trademark guidance — https://www.nextgenscience.org/",
+    "1EdTech CASE specification",
+    "schema.org / LRMI alignmentObject — https://schema.org/alignmentObject"
+  ],
+  "output": "A committed standards-alignment model and framework-license policy document covering: alignment data structure, no-fabrication rule, CCSS/NGSS/default-framework licensing policies, descriptor-reproduction limits and attribution notices, CASE/LRMI emittability specification, and specVersions recording requirement.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

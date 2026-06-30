@@ -1,0 +1,35 @@
+{
+  "id": "teacher-lesson-plans-i18n-023",
+  "title": "Localize a delivered plan (language + pedagogy reviewer)",
+  "project": "teacher-lesson-plans",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "oer", "k12", "open-content", "localization", "i18n", "equity"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Localization widens the reach of lesson plans to teachers and students who are not English-speaking. A translated plan is not just a language swap: it requires adaptation of pedagogy, examples, and cultural references for the target context, and it requires a language+pedagogy reviewer who is qualified in both the target language and the target educational context. The risk tier is medium because translation introduces new opportunities for factual error, age-inappropriateness, and license compliance gaps (the translation itself is a derivative work and must respect all source license obligations). This task is in the backlog pending per-language reviewer recruitment.",
+  "objective": "Translate one delivered, both-gates-passed lesson plan into a target language, with cultural/pedagogical adaptation as needed, reviewed by a qualified language+pedagogy reviewer for the target context.",
+  "acceptanceCriteria": [
+    "A specific target language and a delivered, both-gates-passed source plan are selected and documented.",
+    "A qualified language+pedagogy reviewer is secured for the target language: someone who is a fluent speaker of the target language AND a qualified educator in the target educational context.",
+    "The translated plan is a full, standalone document (not a supplement to the English original) and includes all fields of the canonical schema adapted to the target language.",
+    "Cultural and pedagogical adaptations are documented: where examples, references, or standards were adapted for the target context and why.",
+    "The translation is a derivative work: it carries all source license obligations of the English original (if the English plan is CC-BY-4.0, the translation is CC-BY-4.0; if CC-BY-SA-4.0, the translation must also be CC-BY-SA-4.0) — and the outputLicense field reflects this.",
+    "The language+pedagogy reviewer signs off that the translation is accurate, age-appropriate, pedagogically sound for the target context, and culturally appropriate.",
+    "Commit is DCO signed-off; no secrets or PII in committed files."
+  ],
+  "resources": [
+    "teacher-lesson-plans-scale-018 — scale library (source plans for translation)",
+    "PLAN.md — §Open questions (Q6: Localization sequencing)",
+    "PLAN.md — §Scope (Out of scope: translation/localization at scale in M0-M1)",
+    "Creative Commons license compatibility for derivative translations"
+  ],
+  "output": "A committed translated lesson plan in the target language with cultural/pedagogical adaptation notes, language+pedagogy reviewer sign-off record, and correct output license for the derivative work.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

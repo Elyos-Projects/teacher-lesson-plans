@@ -1,0 +1,35 @@
+{
+  "id": "teacher-lesson-plans-a11y-021",
+  "title": "Full accessibility audit of delivered plans",
+  "project": "teacher-lesson-plans",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "oer", "k12", "accessibility", "udl", "audit"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The UDL checklist (task-005) and the schema validator (task-006) enforce structural accessibility requirements per plan. But those are self-checks and schema checks, not an independent accessibility audit. The PLAN.md success metrics require at least one full accessibility audit per milestone (metric #5). M3 requires a full audit of the delivered plan library — reviewing all plans against WCAG 2.1 / CAST UDL guidelines, checking that exported PDFs and HTML are screen-reader accessible, and identifying any systematic accessibility gaps across the library. The audit also validates that the UDL checklist (task-005) is catching the right things in practice.",
+  "objective": "Conduct a full accessibility audit of all plans delivered by M3, evaluate them against WCAG 2.1 and CAST UDL guidelines, identify systematic gaps, and produce a committed audit report with remediation recommendations.",
+  "acceptanceCriteria": [
+    "All plans published and adopted by M3 are reviewed in the audit.",
+    "Audit evaluates both the Markdown/front-matter source and the exported PDF/HTML output against WCAG 2.1 Level AA criteria at minimum: text alternatives, adaptable structure, distinguishable content, keyboard accessibility (for HTML), readable and navigable.",
+    "Audit evaluates alignment with CAST UDL guidelines: representation, action/expression, engagement — checking that differentiation, language supports, and udlNotes are substantive (not boilerplate).",
+    "Audit report identifies: any plans with accessibility deficiencies (and what they are), any systematic gaps in the UDL checklist or schema enforcement that allowed deficiencies through, and recommendations for remediation.",
+    "Remediation tasks are spawned as new maintenance tasks for any plans with identified deficiencies.",
+    "Audit report is committed to the repo."
+  ],
+  "resources": [
+    "teacher-lesson-plans-udl-005 — UDL + age-appropriateness checklists (what the audit validates)",
+    "teacher-lesson-plans-scale-018 — scale library (the plans to audit)",
+    "WCAG 2.1 guidelines — https://www.w3.org/TR/WCAG21/",
+    "CAST UDL guidelines — https://udlguidelines.cast.org/",
+    "PLAN.md — §Success metrics (metric #5: accessibility/UDL coverage)"
+  ],
+  "output": "A committed full accessibility audit report covering all M3-delivered plans, evaluated against WCAG 2.1 and CAST UDL guidelines, with identified deficiencies and remediation recommendations.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

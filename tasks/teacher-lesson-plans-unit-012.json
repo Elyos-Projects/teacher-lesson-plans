@@ -1,0 +1,37 @@
+{
+  "id": "teacher-lesson-plans-unit-012",
+  "title": "Author a coherent 3-5 plan unit (one subject/grade)",
+  "project": "teacher-lesson-plans",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "oer", "k12", "open-content", "lesson-plan", "curriculum"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The pilot plan (task-008) proves the pipeline works for one plan. M1 requires a coherent unit: 3-5 lesson plans in the same subject and grade band, building on each other with shared objectives, to demonstrate that the project can produce a usable curriculum unit — not just isolated lessons. A coherent unit is more valuable to teachers (who teach sequences, not single lessons) and more adoptable by repositories (which prefer curated units). This task requires all M1 tooling (CASE/LRMI metadata emitter) to be in place so every plan in the unit has machine-readable metadata.",
+  "objective": "Author 3-5 lesson plans forming a coherent, sequenced unit on a single subject/grade band, each passing both gates with committed artifacts and emitting valid CASE/LRMI metadata.",
+  "acceptanceCriteria": [
+    "3-5 lesson plans are authored covering the same subject and grade band, with shared or building objectives that form a coherent instructional sequence.",
+    "Every plan passes the license gate (teacher-lesson-plans-license-003): all sources have committed PASS artifacts, snapshots, and complete attribution blocks.",
+    "Every plan passes the pedagogy/standards review gate (teacher-lesson-plans-reviewer-002): objectives sound, alignment correct, procedure teachable in stated time, answer keys correct, UDL/differentiation present.",
+    "CASE/LRMI metadata is emitted and validates successfully for every plan in the unit (teacher-lesson-plans-casemeta-011).",
+    "Plans form a coherent sequence: learning objectives build across the unit, and the sequence is documented in a unit overview or README.",
+    "At least 1 plan in the unit is taught by a real teacher with structured content feedback recorded (no student PII) in the outcome ledger.",
+    "Commits are DCO signed-off; no secrets or PII in committed files."
+  ],
+  "resources": [
+    "teacher-lesson-plans-pilot-008 — completed pilot plan (process reference)",
+    "teacher-lesson-plans-casemeta-011 — CASE/LRMI emitter (required before this task)",
+    "teacher-lesson-plans-template-001 — canonical lesson-plan schema and template",
+    "teacher-lesson-plans-license-003 — license gate",
+    "teacher-lesson-plans-reviewer-002 — pedagogy/standards reviewer",
+    "OER sources: OpenStax, CK-12, OER Commons, Curriki, Siyavula"
+  ],
+  "output": "3-5 committed lesson plans forming a coherent unit, each with committed gate artifacts (license + pedagogy), emitted CASE/LRMI metadata, and at least 1 with adoption evidence (teaching feedback) in the outcome ledger.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "teacher-lesson-plans-readability-010",
+  "title": "Reading-level + sensitive-subject detector (CI)",
+  "project": "teacher-lesson-plans",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "oer", "k12", "tooling", "ci", "accessibility", "safeguarding"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The UDL and age-appropriateness checklists (task-005) define what every plan must satisfy, but currently those checks are manual. M1 must automate the reading-level check (is the text appropriate for the stated grade band?) and the sensitive-subject detector (does the plan touch health, safety, sexuality, religion, or contested civic/historical content?) so that age-inappropriate or improperly flagged plans are caught before the reviewer gate. This reduces reviewer burden and prevents the most common safeguarding slips from reaching publication.",
+  "objective": "Implement a CI tool that checks lesson plan reading level against the stated grade band and detects sensitive-subject keywords that require riskTier escalation to medium, failing the build if either check fails.",
+  "acceptanceCriteria": [
+    "Reading-level check computes a readability metric (e.g. Flesch-Kincaid, Gunning Fog, or equivalent) for the plan's student-facing content and fails the build if the score is outside the acceptable range for the plan's declared gradeBand.",
+    "Sensitive-subject detector scans plan content for keywords/patterns associated with: health/medical content, safety/risk topics, sexuality/relationships, religion/belief systems, and contested civic/historical/political content — and fails the build with a flag if any are detected without riskTier: medium being set.",
+    "Both checks run in CI on every PR that touches a plan file; errors are actionable (identifying which section triggered the flag).",
+    "Code is MIT-licensed; tests include plans that should pass and plans that should fail each check; CI is green; no credentials embedded.",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "teacher-lesson-plans-udl-005 — UDL + age-appropriateness checklists (defines the standards this automates)",
+    "teacher-lesson-plans-validator-006 — existing schema validator (to integrate with or extend)",
+    "PLAN.md — §Data, licensing & compliance (Safeguarding & content standards)",
+    "Readability libraries: e.g. text-readability (npm), syllable (npm), or equivalent",
+    "PLAN.md — §Solution approach (Reading-level / age-appropriateness check component)"
+  ],
+  "output": "A merged PR adding reading-level and sensitive-subject detection checks to the CI pipeline, with tests confirming pass/fail cases for both checks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

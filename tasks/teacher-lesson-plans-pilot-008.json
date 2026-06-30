@@ -1,0 +1,39 @@
+{
+  "id": "teacher-lesson-plans-pilot-008",
+  "title": "One pilot lesson plan, end-to-end (both gates)",
+  "project": "teacher-lesson-plans",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "oer", "k12", "open-content", "lesson-plan"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M0's capstone is proving the entire pipeline on one real, complete lesson plan: from OER source selection through the license gate, standards alignment, authoring against the canonical template, automated checks, pedagogy/standards reviewer sign-off, export to Markdown + PDF/HTML, and delivery to a partner teacher or open repository. This pilot is the evidence that the model, gates, tooling, and review process all work together — and that a real teacher or repository will accept the output. All M0 foundation tasks (template-001 through outreach-007) are prerequisites; this task synthesises them.",
+  "objective": "Author one complete, classroom-ready lesson plan end-to-end — passing both the license gate and the pedagogy/standards review gate — and deliver it to a pilot teacher or open repository with adoption evidence recorded.",
+  "acceptanceCriteria": [
+    "All OER sources used in the plan passed the license gate (teacher-lesson-plans-license-003) with committed PASS artifacts: permitsDerivatives: true established from a cited clause/URL, shareAlike and nonCommercial booleans recorded, license snapshot committed (copy + SHA-256 + Wayback URL), and complete attribution blocks present.",
+    "The pedagogy/standards reviewer (teacher-lesson-plans-reviewer-002) signed off: objectives are sound and age-appropriate, standards alignment is correct (no fabricated alignments), procedure is teachable in the stated time, answer key (if present) is correct, and UDL/differentiation is present and meaningful.",
+    "The plan is schema-valid against the canonical template (teacher-lesson-plans-template-001) and passes all automated checks from teacher-lesson-plans-validator-006: reading level within grade band, attribution complete, metadata valid, links resolve, accessibility structure present.",
+    "The plan is exported to Markdown (canonical) and print-ready PDF or HTML.",
+    "The plan is delivered to a pilot teacher (who confirms they will teach it) or accepted by an open repository for reuse — with adoption evidence committed to the outcome ledger.",
+    "If no adoption channel is yet available, the plan is published openly with the adoption blocker explicitly surfaced and verifiedNeed left false.",
+    "Commit is DCO signed-off; no secrets or PII in committed files."
+  ],
+  "resources": [
+    "teacher-lesson-plans-template-001 — canonical lesson-plan schema and authoring template",
+    "teacher-lesson-plans-reviewer-002 — named pedagogy/standards reviewer",
+    "teacher-lesson-plans-license-003 — OER license gate checklist + composed-license rule",
+    "teacher-lesson-plans-standards-004 — standards-alignment model",
+    "teacher-lesson-plans-udl-005 — UDL + age-appropriateness checklists",
+    "teacher-lesson-plans-validator-006 — schema validator (CI)",
+    "teacher-lesson-plans-outreach-007 — partner/repository shortlist",
+    "OER sources: OpenStax, CK-12, OER Commons, Curriki, Siyavula"
+  ],
+  "output": "One complete, schema-valid lesson plan committed to the repo in Markdown + YAML front-matter, with committed license-gate artifacts, reviewer sign-off record, PDF/HTML export, and adoption evidence in the outcome ledger (or an explicit blocker note if adoption is pending).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

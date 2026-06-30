@@ -1,0 +1,36 @@
+{
+  "id": "teacher-lesson-plans-casemeta-011",
+  "title": "CASE/LRMI alignment metadata emitter + validator",
+  "project": "teacher-lesson-plans",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "oer", "k12", "tooling", "metadata", "interoperability", "standards"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Interoperability is a core goal of this project: lesson plans must be importable into LMS systems, discoverable by search engines, and usable by OER repositories. This requires machine-readable metadata: LRMI / schema.org LearningResource + alignmentObject for discoverability, and CASE (1EdTech Competencies & Academic Standards Exchange) format for standards alignment. Without an emitter that generates these from the canonical Markdown + YAML front-matter, every plan requires manual metadata work that is error-prone and blocks LMS import and repository acceptance. This task builds the metadata emitter and validator that all subsequent plan-authoring and export tasks depend on.",
+  "objective": "Implement a metadata emitter that reads a plan's YAML front-matter and produces valid LRMI/schema.org LearningResource + alignmentObject JSON-LD and a CASE-compatible standards alignment document, plus a validator that checks them against the relevant specs.",
+  "acceptanceCriteria": [
+    "The emitter reads a lesson plan's YAML front-matter (standards[] field per the alignment model in teacher-lesson-plans-standards-004) and produces a schema.org/LRMI LearningResource JSON-LD document with at least: name, description, educationalLevel, educationalAlignment (alignmentObject entries for each standard).",
+    "The emitter produces a CASE-compatible alignment document (or CASE association records) for each standards[] entry, using the framework code and identifier from the plan's alignment model.",
+    "A validator runs in CI to confirm the emitted LRMI JSON-LD and CASE documents are structurally valid against the pinned spec versions (recorded in a specVersions file committed to the repo).",
+    "The emitter is integrated into the CI pipeline and runs on every plan PR; failed validation fails the build.",
+    "Code is MIT-licensed; golden-fixture tests (input plan → expected LRMI/CASE output) are committed; pnpm build && pnpm test && pnpm lint pass; no credentials embedded.",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "teacher-lesson-plans-standards-004 — standards-alignment model (defines the input schema)",
+    "teacher-lesson-plans-validator-006 — existing schema validator (to integrate with)",
+    "schema.org / LRMI LearningResource — https://schema.org/LearningResource",
+    "schema.org / LRMI alignmentObject — https://schema.org/alignmentObject",
+    "1EdTech CASE specification — https://www.1edtech.org/standards/case",
+    "PLAN.md — §Solution approach (CASE/LRMI metadata emitter component)"
+  ],
+  "output": "A merged PR adding a CASE/LRMI metadata emitter and validator to the CI pipeline, with golden fixtures and a committed specVersions file recording the pinned LRMI and CASE spec versions.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

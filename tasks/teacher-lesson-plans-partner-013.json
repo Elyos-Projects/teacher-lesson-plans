@@ -1,0 +1,33 @@
+{
+  "id": "teacher-lesson-plans-partner-013",
+  "title": "Secure first confirmed adopting partner",
+  "project": "teacher-lesson-plans",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "oer", "k12", "partnership", "outreach", "adoption"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project's success bar requires plans to be actually taught by real teachers or accepted by real repositories — not just authored. The outreach task (task-007) opens the first threads; this M1 task must close one: securing a confirmed adopting partner who agrees to use contributed plans, documents the adoption mechanism, and allows affected tasks to be updated to verifiedNeed: true with a named requestor. Without a confirmed partner, every task in the project remains verifiedNeed: false and no plan can be counted as delivered.",
+  "objective": "Secure and document a commitment from at least one named teacher, school, or OER repository to adopt and use lesson plans produced by this project, and update affected tasks accordingly.",
+  "acceptanceCriteria": [
+    "At least one named partner (teacher, school/district curriculum lead, or OER repository) provides a confirmed commitment to adopt and use lesson plans from this project.",
+    "The adoption mechanism is documented: classroom teaching vs. repository submission, how adoption evidence will be collected, and the partner's contact/confirmation on record with the maintainer.",
+    "A partner record is committed to the repo (or maintainer-held with a committed summary) capturing: partner name/org, role, adoption mechanism, confirmed plans in scope, and confirmation date/channel.",
+    "All task JSON files affected by this confirmation are updated: verifiedNeed is set to true and requestor is set to the partner's name/org for those tasks.",
+    "No partner PII (personal home address, personal phone) is committed; only the name, org, and role-appropriate contact channel."
+  ],
+  "resources": [
+    "teacher-lesson-plans-outreach-007 — partner/repository outreach shortlist (prerequisite)",
+    "PLAN.md — §Problem & beneficiaries (partner/requestor description)",
+    "PLAN.md — §Success metrics (metric #8: partner secured)",
+    "TASKS.md — note on verifiedNeed: false / requestor: TO BE SECURED"
+  ],
+  "output": "A committed partner-confirmation record documenting the adopting partner's name/org, adoption mechanism, scope, and confirmation — plus updated task JSON files with verifiedNeed: true and requestor set for affected tasks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
