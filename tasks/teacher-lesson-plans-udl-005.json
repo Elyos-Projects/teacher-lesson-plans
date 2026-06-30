@@ -1,0 +1,35 @@
+{
+  "id": "teacher-lesson-plans-udl-005",
+  "title": "Accessibility/UDL + age-appropriateness checklists",
+  "project": "teacher-lesson-plans",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "oer", "k12", "accessibility", "udl", "equity"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Because lesson plans produced by this project are intended for real classrooms with children, every plan must meet two non-negotiable quality bars: (1) accessibility and Universal Design for Learning (UDL) — differentiation for varied readiness, language supports for multilingual learners, plain language, alt-text for images, and screen-reader-friendly structure; and (2) age-appropriateness, inclusivity, and safeguarding — non-discriminatory, non-partisan content suited to the stated grade band. Without a concrete, committed checklist for both, plan authors and reviewers have no shared standard to apply. This task creates those checklists, which will be enforced by the pedagogy/standards reviewer gate and later automated in the reading-level/sensitive-subject detector (task-010).",
+  "objective": "Create the Accessibility/UDL checklist and the age-appropriateness/inclusivity/safeguarding checklist that every lesson plan must satisfy before publication, and establish the protocol for sensitive-subject escalation to medium risk.",
+  "acceptanceCriteria": [
+    "Accessibility/UDL checklist covers at minimum: plain-language writing for the stated grade band, alt-text required for any image or visual element, screen-reader-friendly document structure, differentiation section with support[], extension[], and languageSupports[], and udlNotes capturing Universal Design for Learning rationale.",
+    "Age-appropriateness checklist covers: content is appropriate for the stated grade band (verified against a recognized readability/developmental framework), no discriminatory, stereotyping, or exclusionary content, non-partisan treatment of contested civic/political/religious/cultural topics, and inclusive example names/scenarios (fictional).",
+    "Safeguarding checklist covers: no collection or inclusion of real student or teacher PII, sensitive-subject identification (health, safety, sexuality, religion, contested history/politics), and mandatory escalation path for any sensitive subject to riskTier: medium with subject-expert review.",
+    "The sensitive-subject escalation protocol specifies: which topics trigger escalation, what 'education, not advice' framing means and requires, and that escalation is mandatory (not optional).",
+    "Checklists are structured as enumerated yes/no items that a plan author self-checks and the pedagogy/standards reviewer verifies.",
+    "Document is committed to the repo and serves as the normative reference for plan-authoring tasks and for the readability/sensitive-subject detector (teacher-lesson-plans-readability-010)."
+  ],
+  "resources": [
+    "PLAN.md — §Data, licensing & compliance (Safeguarding & content standards section)",
+    "PLAN.md — §Solution approach (Accessibility/UDL checklist component)",
+    "teacher-lesson-plans-template-001 — canonical schema (differentiation, accessibility, sensitiveSubject fields)",
+    "Universal Design for Learning (UDL) guidelines — https://udlguidelines.cast.org/",
+    "WCAG 2.1 accessibility guidelines (for structural accessibility)"
+  ],
+  "output": "A committed document containing: the Accessibility/UDL checklist, the age-appropriateness/inclusivity/safeguarding checklist, and the sensitive-subject escalation protocol — all as enumerated, verifiable items ready for plan authors and reviewers to apply.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

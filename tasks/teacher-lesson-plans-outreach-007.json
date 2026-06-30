@@ -1,0 +1,36 @@
+{
+  "id": "teacher-lesson-plans-outreach-007",
+  "title": "Partner/repository outreach + pilot shortlist",
+  "project": "teacher-lesson-plans",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "oer", "k12", "partnership", "outreach"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Under Elyos's 'delivered, not merged' standard, a lesson plan is a good deed only when a real teacher teaches it or a real repository accepts it for reuse — not when it is merely authored. No partner classroom, teacher network, or OER repository has yet agreed to accept and use these plans. This task opens the first partner-outreach threads — identifying candidate teachers, school curriculum leads, and OER repositories, making initial contact, and producing a prioritized shortlist — so that by M1 there is at least one confirmed adopting partner (task-013). Without this outreach, plans risk being authored but never adopted, which does not satisfy the project's success bar.",
+  "objective": "Research and contact candidate adopting partners (teachers, schools, OER repositories) and produce a committed pilot shortlist with contact status and adoption mechanism for each candidate.",
+  "acceptanceCriteria": [
+    "At least 5 candidate partner types are researched and documented: individual teachers or teacher cohorts, school/district curriculum leads, OER repositories (e.g. OER Commons, Curriki, OpenStax Community, state OER hubs), and informal educator networks.",
+    "At least 3 outreach contacts are initiated (email, forum post, repository submission inquiry, or equivalent) and documented with date, channel, and content summary.",
+    "A committed pilot shortlist document ranks candidates by: likelihood of adoption, alignment with the project's subject/grade focus, and ability to provide structured feedback.",
+    "For each candidate, the document records: name/org, contact channel, adoption mechanism (classroom use vs. repository submission), current outreach status, and next action.",
+    "The shortlist explicitly notes which candidates could flip affected tasks to verifiedNeed: true and sets requestor once confirmed.",
+    "Document is committed to the repo; no PII of private individuals is committed without their consent."
+  ],
+  "resources": [
+    "PLAN.md — §Problem & beneficiaries (partner/requestor description)",
+    "PLAN.md — §Open questions (Q2: partner-first vs. repository-first cold-start)",
+    "OER Commons — https://www.oercommons.org/ (repository candidate)",
+    "Curriki — https://www.curriki.org/ (repository candidate)",
+    "OpenStax Community — https://openstax.org/ (repository/author network)",
+    "Siyavula — https://www.siyavula.com/ (OER source + potential partner)"
+  ],
+  "output": "A committed partner-outreach and pilot-shortlist document covering at least 5 candidate types, at least 3 initiated contacts, ranked candidates with contact status and next actions, and a record of which candidates could confirm verifiedNeed.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

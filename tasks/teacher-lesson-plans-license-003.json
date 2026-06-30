@@ -1,0 +1,38 @@
+{
+  "id": "teacher-lesson-plans-license-003",
+  "title": "OER license gate checklist + composed-license rule",
+  "project": "teacher-lesson-plans",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "oer", "open-content", "licensing", "compliance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "License/attribution drift is the highest-impact risk in this project: silently wrapping content whose license forbids derivatives, omitting attribution, or blending incompatible share-alike/non-commercial terms could expose all published plans to recall or legal complaint. Before any lesson plan is authored or published, the project needs a hard, documented license gate: an objective checklist that every OER source must pass, a composed-license rule that determines the plan's own license from the set of source obligations, and a format for the committed PASS/FLAG/EXCLUDE artifact that the gate produces per source. This gate is non-skippable and must be passed before a plan can be reviewed or published.",
+  "objective": "Define and document the OER license gate: the accepted-license list, the objective PASS/FLAG/EXCLUDE criterion, the composed-license rule, the snapshot/evidence requirements, and the per-source artifact format — so every plan author and reviewer applies the same no-default-allow standard.",
+  "acceptanceCriteria": [
+    "Enumerates accepted licenses for primary-tier plans (CC0, public domain, CC-BY-4.0, CC-BY-3.0, US-government public domain) and accepted-with-consequences licenses (CC-BY-SA → plan must be CC-BY-SA; CC-BY-NC/NC-SA → NC tier, conspicuously labelled, never blended).",
+    "Defines the NC quarantine policy: NC-licensed sources are permitted only in a clearly separated NC tier; NC plans are never relicensed to CC-BY, never mixed into a CC-BY plan, and are conspicuously labelled.",
+    "Defines excluded categories: ND licenses, all-rights-reserved, 'for educational use only' without a license text, ambiguous/unstated terms → EXCLUDE with no default-allow.",
+    "States the objective PASS criterion: a source PASSES only if permitsDerivatives: true is established from a cited clause/URL; missing or unparseable evidence = EXCLUDE.",
+    "Specifies the per-source boolean fields to record: permitsDerivatives, shareAlike, nonCommercial — each with the citing clause/URL.",
+    "Specifies the license snapshot requirement: a committed copy of the license text/page + SHA-256 hash + Wayback Machine URL; a bare URL is explicitly insufficient.",
+    "Defines the composed-license rule: the plan's output license is the most restrictive compatible license across its source obligations; SA → CC-BY-SA-4.0; NC → NC tier; incompatible combinations → disallowed.",
+    "Defines the per-source PASS/FLAG/EXCLUDE artifact format (fields and commit location) that the gate produces and that later tooling (teacher-lesson-plans-snapshot-009) will automate.",
+    "The document is committed to the repo and is the authoritative reference for all subsequent plan authoring, review, and tooling tasks."
+  ],
+  "resources": [
+    "PLAN.md — §Data, licensing & compliance",
+    "Creative Commons license suite — CC0, CC-BY, CC-BY-SA, CC-BY-NC terms and compatibility matrix",
+    "Creative Commons — 'Can I use a Creative Commons-licensed work for commercial purposes?' guidance",
+    "teacher-lesson-plans-template-001 — canonical schema (sources[] license fields)",
+    "teacher-lesson-plans-snapshot-009 — snapshot/attribution checker (will automate this gate)"
+  ],
+  "output": "A committed OER license gate specification document covering: accepted-license list, NC quarantine policy, excluded-license list, objective PASS criterion, required per-source boolean fields + citing clause, license snapshot requirements, composed-license rule, and the per-source PASS/FLAG/EXCLUDE artifact format.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

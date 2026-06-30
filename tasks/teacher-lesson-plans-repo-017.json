@@ -1,0 +1,35 @@
+{
+  "id": "teacher-lesson-plans-repo-017",
+  "title": "OER repository submission channel + acceptance flow",
+  "project": "teacher-lesson-plans",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "oer", "k12", "partnership", "outreach", "interoperability"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Repository submission is the 'self-serve fallback' adoption channel: if no pilot teacher is secured, publishing to an OER repository at least makes plans discoverable and reusable, though it is explicitly 'publication, not adoption.' But even as a fallback, repository submission requires research: each repository has different submission requirements, metadata formats, license acceptance criteria, and review processes. Without a documented, working submission channel, plans cannot reach repository partners. This task researches the submission flow for at least one OER repository and establishes a repeatable, documented process for all future plan submissions.",
+  "objective": "Research and document a working OER repository submission channel: submission requirements, metadata format, license acceptance criteria, review process, and how to record acceptance evidence for the outcome ledger.",
+  "acceptanceCriteria": [
+    "At least one OER repository submission channel is researched and documented: submission URL, required metadata fields, accepted license types, review/acceptance process, and typical turnaround time.",
+    "The submission process for the repository is tested with at least one pilot plan: a plan is submitted and the outcome (accepted, pending, rejected with reason) is recorded.",
+    "Acceptance evidence format is defined: what constitutes verified acceptance (a live URL, an acceptance email, a repository record) and how to record it in the outcome ledger.",
+    "The document covers how LRMI/schema.org metadata (from task-011) and CC packages (from task-016) map to the repository's required format.",
+    "The documented process is repeatable: a future contributor can follow the steps without additional research to submit subsequent plans.",
+    "No account credentials or API tokens are committed; submission is either manual or uses a public-access flow."
+  ],
+  "resources": [
+    "teacher-lesson-plans-partner-013 — confirmed partner (may include a repository partner)",
+    "OER Commons — https://www.oercommons.org/ (submission process research target)",
+    "Curriki — https://www.curriki.org/ (submission process research target)",
+    "Zenodo — https://zenodo.org/ (DOI-issuing open repository candidate)",
+    "PLAN.md — §Sustainability & maintenance (outcome tracking and repository fallback)"
+  ],
+  "output": "A committed document describing a working OER repository submission channel: requirements, metadata mapping, tested submission process, acceptance evidence format, and instructions for repeatable future submissions.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

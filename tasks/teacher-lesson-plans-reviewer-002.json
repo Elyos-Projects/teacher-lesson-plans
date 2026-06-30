@@ -1,0 +1,32 @@
+{
+  "id": "teacher-lesson-plans-reviewer-002",
+  "title": "Name/secure pedagogy/standards reviewer (blocking gate role)",
+  "project": "teacher-lesson-plans",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "oer", "k12", "pedagogy", "governance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every lesson plan published by this project must pass a mandatory pedagogy/standards review gate conducted by a qualified educator. That reviewer role does not yet exist. Until a named, credentialed pedagogy/standards reviewer is confirmed, no plan can be reviewed or published — making this the single most blocking dependency in M0. The reviewer must be a certified teacher or curriculum specialist who can independently verify: that objectives are sound and age-appropriate, that standards alignments are correct (no fabrications), that the procedure is teachable in the stated time, that the answer key is correct, and that UDL/differentiation is present and meaningful.",
+  "objective": "Identify, recruit, and secure a commitment from at least one named pedagogy/standards reviewer who meets the credentialing bar, agrees to the gate artifact protocol, and is available to review the M0 pilot plan.",
+  "acceptanceCriteria": [
+    "At least one named pedagogy/standards reviewer is confirmed and documented (name, credentials, scope, availability, and contact on record with the maintainer).",
+    "The reviewer meets the credentialing bar: certified teacher, curriculum specialist, or equivalent qualified educator.",
+    "The reviewer has read and agreed to the gate artifact protocol (what they must verify, what constitutes sign-off, and how they record it).",
+    "The reviewer is available to conduct the M0 pilot-plan review (teacher-lesson-plans-pilot-008) before that task can be declared done.",
+    "A short written record (committed document or maintainer-held note) captures the reviewer's name, credentials, scope, and contact — no PII beyond what the reviewer consents to make semi-public."
+  ],
+  "resources": [
+    "PLAN.md — §Governance, roles & stakeholders (Pedagogy/standards reviewer description)",
+    "TASKS.md — M0 Milestone table and Definition of Done",
+    "PLAN.md — §Quality, review & risk gates (gate 2: Pedagogy & standards review gate)"
+  ],
+  "output": "A committed document recording that the pedagogy/standards reviewer role is filled: reviewer name, credentials, scope, availability, and gate-artifact protocol agreement — enabling teacher-lesson-plans-pilot-008 to proceed.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

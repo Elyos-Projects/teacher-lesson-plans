@@ -1,0 +1,36 @@
+{
+  "id": "teacher-lesson-plans-sensitive-014",
+  "title": "One sensitive-subject plan via the medium-risk path",
+  "project": "teacher-lesson-plans",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "oer", "k12", "open-content", "lesson-plan", "safeguarding"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The project's safeguarding and content-standards rules require that any lesson plan touching health, safety, sexuality, religion, or contested civic/historical/political content is escalated to riskTier: medium and must pass a subject-matter expert review in addition to the standard license and pedagogy gates. Until at least one sensitive-subject plan is authored and taken through the full medium-risk path, the project's escalation process is untested. This task validates the entire medium-risk path: identification, escalation, subject-expert review, 'education, not advice' framing check, and publication. It builds institutional knowledge for handling sensitive content at scale.",
+  "objective": "Author one lesson plan on a sensitive subject (e.g. a contested-history, health, or civic topic) and take it through the full medium-risk path: correct riskTier escalation, subject-expert review, 'education, not advice' framing, license and pedagogy gates.",
+  "acceptanceCriteria": [
+    "The plan correctly sets sensitiveSubject: { flag: true, reason: <explanation>, framing: 'education, not advice' } in the YAML front-matter.",
+    "The plan is escalated to riskTier: medium in the task and in the review record.",
+    "A subject-matter expert (relevant to the topic: e.g. health educator, historian, science specialist, civics educator) reviews the plan for accuracy, balance, non-partisan framing, and confirms it meets the 'education, not advice' standard — sign-off is committed.",
+    "The plan also passes the standard license gate (teacher-lesson-plans-license-003) and pedagogy/standards review gate (teacher-lesson-plans-reviewer-002).",
+    "Content is non-partisan, age-appropriate, inclusive, and sourced from cited OER; no personal/medical/legal advice is given.",
+    "The plan passes all automated CI checks from teacher-lesson-plans-validator-006, teacher-lesson-plans-readability-010, and teacher-lesson-plans-casemeta-011.",
+    "Commit is DCO signed-off; no secrets or PII in committed files."
+  ],
+  "resources": [
+    "teacher-lesson-plans-udl-005 — sensitive-subject escalation protocol",
+    "teacher-lesson-plans-unit-012 — unit context (this plan may be part of the unit)",
+    "teacher-lesson-plans-reviewer-002 — pedagogy/standards reviewer",
+    "PLAN.md — §Data, licensing & compliance (Safeguarding & content standards)",
+    "PLAN.md — §Quality, review & risk gates (gate 3: Subject-expert gate)"
+  ],
+  "output": "One committed lesson plan on a sensitive subject, with riskTier: medium, a committed subject-expert sign-off record, committed license-gate artifact, pedagogy-gate sign-off, and all automated CI checks passing.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

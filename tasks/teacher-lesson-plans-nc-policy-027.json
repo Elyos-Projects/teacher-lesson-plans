@@ -1,0 +1,34 @@
+{
+  "id": "teacher-lesson-plans-nc-policy-027",
+  "title": "Board decision + policy on the NC tier",
+  "project": "teacher-lesson-plans",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "oer", "licensing", "compliance", "governance", "policy"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Open Question #3 in PLAN.md is whether to include CC-BY-NC (Non-Commercial) licensed OER sources in a clearly labelled, segregated NC tier. Including NC sources widens the source pool but complicates the project's 'freely available / open' promise (NC restricts commercial reuse), creates downstream reuse friction (translators, LMS vendors, and commercial repositories cannot legally use NC plans), and is easy to mishandle (NC plans must never be mixed into CC-BY plans or relicensed). The current license gate (task-003) defines the NC quarantine policy as a placeholder; this task requires an actual board or maintainer decision and a formal, committed policy.",
+  "objective": "Facilitate and document a board or maintainer decision on whether to permit NC-licensed OER sources in an NC tier, and produce a committed NC policy that updates or confirms the license gate specification.",
+  "acceptanceCriteria": [
+    "The decision process is documented: who was consulted, what arguments were considered (broader source pool vs. downstream reuse friction vs. mishandling risk), and who made the final decision.",
+    "A formal NC policy is committed to the repo: either (a) NC sources are permitted in a clearly separated, conspicuously labelled NC tier with specific operational constraints, or (b) NC sources are excluded entirely from the project, with the rationale.",
+    "If NC is permitted: the policy defines the NC tier label format, the prohibition on mixing NC into CC-BY plans, the prohibition on relicensing NC content, and the downstream-reuse warning to attach to NC plans.",
+    "If NC is excluded: the policy states the exclusion, removes the NC-tier placeholder from the license gate (task-003), and updates any plan that relied on the placeholder.",
+    "The license gate specification (teacher-lesson-plans-license-003) is updated to reflect the decided policy.",
+    "Document is committed to the repo."
+  ],
+  "resources": [
+    "PLAN.md — §Open questions (Q3: NC tier — include at all?)",
+    "teacher-lesson-plans-license-003 — license gate (the NC quarantine policy placeholder to resolve)",
+    "Creative Commons NonCommercial license terms and compatibility guidance",
+    "PLAN.md — §Data, licensing & compliance (NC quarantine policy description)"
+  ],
+  "output": "A committed NC policy document with the board/maintainer decision, rationale, operational rules (if permitted) or exclusion statement (if excluded), and an update to the license gate specification.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "teacher-lesson-plans-reuse-022",
+  "title": "Track and verify external reuse/adoption events",
+  "project": "teacher-lesson-plans",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "oer", "k12", "outcomes", "adoption", "measurement"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "One of the project's key M3 success metrics is at least 3 verifiable external reuse/adoption events: repository acceptance, forks, translations, or independent teacher reuse beyond the original pilot. These events are the strongest evidence that the project's output has escaped the original team and is being adopted by the wider community. Without a systematic process for discovering, verifying, and recording external reuse events, these events may go undetected. This task establishes that tracking process and compiles the M3 evidence.",
+  "objective": "Establish a systematic process for discovering and verifying external reuse/adoption events, and compile at least 3 verifiable events for the M3 milestone.",
+  "acceptanceCriteria": [
+    "A reuse-tracking process is documented: how to monitor for external reuse (e.g. repository search, fork notifications, partner reports, OER metadata tracking) and how to verify each event (what constitutes externally verifiable evidence).",
+    "At least 3 verifiable external reuse/adoption events are recorded: each must have externally verifiable evidence (a live repository URL, an acceptance record, a documented fork, a partner confirmation of independent reuse or translation) — not just internal records.",
+    "Each recorded event specifies: the plan reused, the reusing party (name/org if consented, otherwise 'anonymous external user'), the reuse type (classroom teaching, repository acceptance, fork, translation, other), the date, and the evidence URL or reference.",
+    "Events are recorded in the outcome ledger (teacher-lesson-plans-feedback-019) and summarised in a committed report.",
+    "The process note distinguishes between 'adoption' (active use, teaching, or repository submission) and 'passive reuse' (download without evidence of use) — only the former counts toward the metric."
+  ],
+  "resources": [
+    "teacher-lesson-plans-scale-018 — scale library (the plans subject to external reuse)",
+    "teacher-lesson-plans-feedback-019 — outcome ledger (where events are recorded)",
+    "PLAN.md — §Success metrics (metric #6: verified external reuse/adoption)",
+    "PLAN.md — §Sustainability & maintenance (reuse tracking)"
+  ],
+  "output": "A committed reuse-tracking process document and a compiled record of at least 3 verified external reuse/adoption events with externally verifiable evidence.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

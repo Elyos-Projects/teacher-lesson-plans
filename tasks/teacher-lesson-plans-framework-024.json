@@ -1,0 +1,36 @@
+{
+  "id": "teacher-lesson-plans-framework-024",
+  "title": "Add a second standards framework (non-US)",
+  "project": "teacher-lesson-plans",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "oer", "k12", "standards", "metadata", "international", "interoperability"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The initial standards-alignment model (task-004) anchors to CCSS and NGSS, which are US-centric. To serve teachers outside the US, the project needs to support at least one non-US standards framework. Adding a new framework requires: verifying the framework's license (descriptor reproduction terms vary widely — some national frameworks are public-domain government works, others are restrictively licensed), extending the alignment model to accommodate the framework's code structure, updating the CASE/LRMI emitter (task-011), and potentially recruiting a pedagogy reviewer qualified in that framework's educational context. This task is in the backlog pending the framework-anchor decision identified as Open Question #1 in PLAN.md.",
+  "objective": "Research, select, and specify a second (non-US) standards framework for the project, including its license terms, descriptor-reproduction policy, alignment model extensions, and CASE/LRMI mapping.",
+  "acceptanceCriteria": [
+    "A specific non-US standards framework is selected and justified (e.g. UK National Curriculum, Australian Curriculum, IB Primary Years Programme, or a national OER-aligned framework).",
+    "The framework's own license terms are verified: whether descriptor text may be reproduced, under what conditions and with what attribution, or whether code+link-only applies.",
+    "The standards-alignment model (teacher-lesson-plans-standards-004) is extended to accommodate the new framework's code structure, with updated CASE/LRMI mapping.",
+    "A per-framework descriptor-reproduction policy is documented for the new framework (consistent with the approach in task-004 for CCSS/NGSS).",
+    "The document identifies any pedagogy reviewer qualification requirements specific to the new framework's educational context.",
+    "The document is committed and updates the specVersions file with the new framework's version/edition reference."
+  ],
+  "resources": [
+    "teacher-lesson-plans-standards-004 — standards-alignment model (to extend)",
+    "teacher-lesson-plans-casemeta-011 — CASE/LRMI emitter (to update)",
+    "PLAN.md — §Open questions (Q1: standards framework anchor choice)",
+    "UK National Curriculum — https://www.gov.uk/national-curriculum",
+    "Australian Curriculum — https://www.australiancurriculum.edu.au/",
+    "IB curriculum frameworks — https://www.ibo.org/"
+  ],
+  "output": "A committed design specification for a second standards framework: framework selection rationale, license terms, descriptor-reproduction policy, alignment model extension, CASE/LRMI mapping, and reviewer qualification requirements.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

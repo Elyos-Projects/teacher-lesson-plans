@@ -1,0 +1,34 @@
+{
+  "id": "teacher-lesson-plans-validator-006",
+  "title": "Schema validator + golden fixtures (CI)",
+  "project": "teacher-lesson-plans",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "oer", "tooling", "ci", "validation"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The canonical lesson-plan schema (task-001) is only useful if it is machine-enforced. Every plan submitted to this project must be automatically validated against the schema before it can be reviewed or merged, so that structural errors (missing fields, wrong types, invalid values) are caught at the PR stage rather than slipping through to publication. This task builds the schema validator, wires it into CI, and seeds it with golden fixtures — known-good and known-bad examples — so regressions are caught immediately. All code tasks in this project (exporters, metadata emitters, checkers) depend on a green CI baseline.",
+  "objective": "Implement a schema validator for lesson plans that runs in CI, validate it against golden-fixture inputs (both valid and invalid), and wire it into the pnpm build + test + lint pipeline.",
+  "acceptanceCriteria": [
+    "A schema validator script or module validates a lesson plan Markdown+YAML front-matter (or JSON representation) against the canonical schema defined in teacher-lesson-plans-template-001.",
+    "At least two golden fixtures are committed: one that is schema-valid (and should PASS) and one that is intentionally invalid (missing required field or wrong type, and should FAIL with a clear error).",
+    "CI runs the validator against all plans in the repo on every PR; any schema-invalid plan fails the build.",
+    "pnpm build && pnpm test && pnpm lint all pass in CI with the validator code present.",
+    "Code is MIT-licensed; no credentials, tokens, or secrets are embedded.",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "teacher-lesson-plans-template-001 — canonical lesson-plan schema and template",
+    "PLAN.md — §Solution approach (Validation tooling component)",
+    "PLAN.md — §Tech stack & key decisions",
+    "Elyos CLAUDE.md — pnpm build/test/lint requirement and DCO sign-off"
+  ],
+  "output": "A merged PR adding a schema validator (TypeScript/ESM, pnpm workspace), golden fixtures (valid + invalid), and CI integration — so every lesson plan PR is automatically schema-validated.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

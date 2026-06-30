@@ -1,0 +1,37 @@
+{
+  "id": "teacher-lesson-plans-cc-016",
+  "title": "IMS Common Cartridge / Thin CC export (fixtures)",
+  "project": "teacher-lesson-plans",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "oer", "k12", "tooling", "export", "interoperability", "lms"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "For lesson plans to be importable into Learning Management Systems (LMS) such as Canvas, Moodle, or Blackboard, they must be packaged in a format those systems accept. IMS Common Cartridge (CC) and Thin Common Cartridge (Thin CC) are the open standard package formats for this. Without a Common Cartridge exporter, plans can only reach teachers who manually find and download Markdown files — a significant friction barrier to adoption. This exporter unlocks LMS-based adoption and OER repository submission that requires CC format, making the 'frictionless adoption' goal achievable.",
+  "objective": "Implement a deterministic IMS Common Cartridge / Thin CC exporter for lesson plans, with committed golden-fixture tests verified in CI against the pinned spec version.",
+  "acceptanceCriteria": [
+    "The exporter takes a lesson plan in Markdown + YAML front-matter and produces a valid IMS Common Cartridge or Thin CC package.",
+    "The output is validated against the pinned IMS Common Cartridge spec version (recorded in a specVersions file committed to the repo).",
+    "Round-trip import is verified in at least one open LMS (e.g. Canvas LMS demo, Moodle sandbox) — or, where no sandbox is available, captured against the LMS's published import schema with evidence recorded.",
+    "LRMI/CASE metadata (from teacher-lesson-plans-casemeta-011) is embedded in the CC package where the spec permits.",
+    "Golden-fixture tests are committed: at least one canonical input plan and its expected CC package output are diffed in CI.",
+    "The exporter is deterministic; code is MIT-licensed; pnpm build && pnpm test && pnpm lint pass; no credentials embedded.",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "teacher-lesson-plans-template-001 — canonical lesson-plan schema and Markdown format",
+    "teacher-lesson-plans-casemeta-011 — CASE/LRMI metadata emitter (prerequisite)",
+    "IMS Common Cartridge specification — https://www.1edtech.org/standards/common-cartridge",
+    "IMS Thin Common Cartridge specification",
+    "PLAN.md — §Solution approach (Exporters component; Interoperability)",
+    "PLAN.md — §Dependencies & integrations (IMS Common Cartridge / Thin CC)"
+  ],
+  "output": "A merged PR adding an IMS Common Cartridge / Thin CC exporter with golden-fixture tests and a committed specVersions file, integrated into the CI pipeline.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "teacher-lesson-plans-scale-018",
+  "title": "Scale library to 10 or more plans across units",
+  "project": "teacher-lesson-plans",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "oer", "k12", "open-content", "lesson-plan", "curriculum"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M2's exit criterion requires at least 10 lesson plans published cumulatively, with at least 5 adopted. This task represents the authoring work to reach that scale: expanding beyond the M1 unit to cover additional subjects, grade bands, or topics, with all plans passing both gates and emitting valid metadata. Scale also generates the cycle-time data (author-to-review-to-delivery time per plan) needed to benchmark and improve the process. The full M2 toolchain (PDF exporter, CC exporter, CASE/LRMI metadata) must be in place so every plan in this batch is fully interoperable.",
+  "objective": "Author and deliver enough lesson plans to reach 10 or more cumulatively published plans (across M0-M2), with at least 5 adopted by real teachers or repositories, and cycle-time data recorded.",
+  "acceptanceCriteria": [
+    "At least 10 lesson plans are published cumulatively (counting plans from pilot-008 and unit-012), each passing both the license gate and the pedagogy/standards review gate with committed artifacts.",
+    "CASE/LRMI metadata is emitted and validates for every plan (teacher-lesson-plans-casemeta-011); PDF/HTML and Common Cartridge exports are produced for every plan.",
+    "At least 5 of the 10+ plans are adopted: taught by a real teacher or accepted by an OER repository, with adoption evidence committed to the outcome ledger.",
+    "Author-to-review-to-delivery cycle time is recorded for each plan in this batch and an aggregate baseline is computed and committed.",
+    "Plans in this batch cover at least one additional subject, grade band, or thematic unit beyond the M1 unit, demonstrating breadth.",
+    "Commits are DCO signed-off; no secrets or PII in committed files."
+  ],
+  "resources": [
+    "teacher-lesson-plans-unit-012 — M1 unit (starting point for M2 expansion)",
+    "teacher-lesson-plans-pdf-015 — PDF/HTML exporter (required)",
+    "teacher-lesson-plans-cc-016 — Common Cartridge exporter (required)",
+    "teacher-lesson-plans-repo-017 — repository submission channel",
+    "teacher-lesson-plans-template-001 — canonical lesson-plan schema and template",
+    "teacher-lesson-plans-license-003 — license gate",
+    "OER sources: OpenStax, CK-12, OER Commons, Curriki, Siyavula"
+  ],
+  "output": "10 or more cumulatively published lesson plans (in Markdown + gate artifacts + metadata + exports), at least 5 with adoption evidence, and a committed cycle-time baseline report.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

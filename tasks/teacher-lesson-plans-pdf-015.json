@@ -1,0 +1,37 @@
+{
+  "id": "teacher-lesson-plans-pdf-015",
+  "title": "Markdown to print PDF/HTML exporter (fixtures)",
+  "project": "teacher-lesson-plans",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "oer", "k12", "tooling", "export", "interoperability"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Teachers need print-ready materials — a digital Markdown file is not walkable into a classroom. For lesson plans to be practically adoptable, they must export to print-ready PDF and/or HTML that a teacher can print or project. The Markdown canonical format (task-001) is the source of truth; PDF and HTML are build artifacts. This exporter must be deterministic (same input produces same output), fixture-tested in CI (so regressions are caught), and accessible (the output must be readable by screen readers and printable cleanly).",
+  "objective": "Implement a deterministic Markdown-to-PDF and/or Markdown-to-HTML exporter for lesson plans, with committed golden-fixture tests verified in CI.",
+  "acceptanceCriteria": [
+    "The exporter takes a lesson plan in Markdown + YAML front-matter and produces a print-ready PDF and/or accessible HTML output.",
+    "Output is accessible: semantic heading structure, alt-text for any images, and screen-reader-compatible markup in the HTML output.",
+    "The exporter is deterministic: the same input always produces the same output (or the same output modulo timestamps clearly documented).",
+    "Golden-fixture tests are committed: at least one canonical input plan and its expected PDF/HTML output are diffed in CI; a change to the exporter that alters output fails the fixture test.",
+    "The exporter uses an open-source toolchain (e.g. Pandoc, Puppeteer/Chrome headless, or a TypeScript PDF library) with pinned versions recorded.",
+    "Code is MIT-licensed; pnpm build && pnpm test && pnpm lint pass; no credentials embedded.",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "teacher-lesson-plans-template-001 — canonical lesson-plan schema and Markdown format",
+    "teacher-lesson-plans-validator-006 — existing schema validator (to integrate with)",
+    "PLAN.md — §Solution approach (Exporters component)",
+    "PLAN.md — §Tech stack & key decisions (Markdown as source of truth)",
+    "Pandoc — https://pandoc.org/ (Markdown → PDF/HTML toolchain candidate)",
+    "Puppeteer — https://pptr.dev/ (headless Chrome PDF candidate)"
+  ],
+  "output": "A merged PR adding a Markdown-to-PDF/HTML exporter with golden-fixture tests integrated into the CI pipeline.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

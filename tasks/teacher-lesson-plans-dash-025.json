@@ -1,0 +1,34 @@
+{
+  "id": "teacher-lesson-plans-dash-025",
+  "title": "Outcome/adoption dashboard (reads the ledger)",
+  "project": "teacher-lesson-plans",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "oer", "tooling", "outcomes", "measurement", "transparency"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The outcome ledger (task-019) records adoption events, teacher feedback, and reuse data per plan. Reading the ledger manually is feasible at small scale, but as the plan library grows, a summary dashboard becomes valuable: showing which plans are adopted, adoption rates, usefulness ratings, reuse events, and cycle-time trends. The dashboard supports success-metric reporting to stakeholders and the public. It must read from the outcome ledger without collecting new data, emit no student or teacher PII, and be a static or server-free view (no student-facing platform).",
+  "objective": "Build a read-only outcome and adoption dashboard that reads the committed outcome ledger and displays key success metrics (plans authored, adopted, usefulness ratings, reuse events) without collecting or exposing PII.",
+  "acceptanceCriteria": [
+    "Dashboard reads from the committed outcome ledger (teacher-lesson-plans-feedback-019) and displays at minimum: total plans published, total plans adopted (taught or repository-accepted), adoption rate, average usefulness rating, and number of verified reuse events.",
+    "Dashboard emits no PII: teacher/partner names are shown only at the level the outcome ledger records (name/org if consented, otherwise aggregated/anonymous).",
+    "Dashboard is static or server-free: it generates a static HTML/JSON report from the ledger file (no backend, no database, no runtime server that collects data).",
+    "Dashboard is committed to the repo and runs as a CI step (regenerated on ledger changes); the output static report is committed or published to GitHub Pages.",
+    "Code is MIT-licensed; pnpm build && pnpm test && pnpm lint pass; no credentials embedded.",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "teacher-lesson-plans-feedback-019 — outcome ledger (data source)",
+    "teacher-lesson-plans-scale-018 — scale library (plans to report on)",
+    "PLAN.md — §Success metrics (the metrics the dashboard must display)",
+    "PLAN.md — §Data, licensing & compliance (Privacy / PII — no PII in outputs)"
+  ],
+  "output": "A merged PR adding a static outcome/adoption dashboard that reads the outcome ledger and displays key success metrics, with CI integration and no PII exposure.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "teacher-lesson-plans-feedback-019",
+  "title": "Teacher-feedback loop + outcome ledger",
+  "project": "teacher-lesson-plans",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "oer", "k12", "governance", "outcomes", "feedback"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Elyos measures success by outcomes delivered to real beneficiaries, not tasks merged. For this project, that means tracking whether plans are actually taught, whether teachers find them useful, and whether there are verifiable reuse events. The outcome ledger and teacher-feedback loop are the infrastructure for this measurement. Without them, adoption claims are anecdotal and the project cannot demonstrate impact. The feedback form must collect content feedback only — no student PII, no identifying classroom data — and the ledger must record per-plan adoption evidence in a format that can be reported honestly.",
+  "objective": "Design and document the teacher-feedback loop (form/process for collecting content feedback) and the outcome ledger (per-plan record of adoption, feedback, and reuse events), with privacy constraints built in.",
+  "acceptanceCriteria": [
+    "Teacher-feedback form is designed: content-only, anonymous, no student or teacher PII, voluntarily submitted. Fields cover at minimum: which plan was used, usefulness rating (e.g. 1-5 scale or 'usable as-is / minor edits / major rework'), and optional free-text on what worked and what to improve.",
+    "Outcome ledger schema is defined and documented: per-plan record includes plan ID, adopting partner name/org (with consent), adoption date, adoption type (classroom teaching vs. repository acceptance), usefulness rating (if feedback provided), and any reuse events.",
+    "Privacy constraints are explicit: feedback is anonymous/aggregated; teacher identity is recorded with consent and only as name/org (not contact details); no student names, classroom data, or demographic data.",
+    "The process for collecting and recording feedback is documented step-by-step (how a teacher submits, how the steward records, how the ledger is updated).",
+    "The ledger is structured as a committed file in the repo (or a clearly defined external record linked from the repo) so adoption evidence is auditable.",
+    "Document is committed to the repo."
+  ],
+  "resources": [
+    "teacher-lesson-plans-partner-013 — confirmed partner (first adopters will use this process)",
+    "PLAN.md — §Success metrics (metrics #1, #2, #7: adoption, usefulness, prep-time)",
+    "PLAN.md — §Data, licensing & compliance (Privacy / PII section)",
+    "PLAN.md — §Sustainability & maintenance (outcome tracking)"
+  ],
+  "output": "A committed document defining the teacher-feedback form design, outcome ledger schema, privacy constraints, and step-by-step process for collecting and recording adoption evidence and feedback.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
