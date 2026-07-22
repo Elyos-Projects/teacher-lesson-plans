@@ -44,7 +44,7 @@ subjects to `medium` risk with mandatory subject-matter review.
 No partner classroom, teacher network, or OER repository has yet agreed to accept and use these
 plans. The *general* need is well established; the *per-plan, per-partner* need is **TO BE
 SECURED**. Until a named teacher/school/repository confirms they will adopt contributions, tasks
-carry `verifiedNeed: false`. This is deliberate: under Elyos's "delivered, not merged" bar, a lesson
+carry `verifiedNeed: false`. This is deliberate: under Hee-Lee Oss's "delivered, not merged" bar, a lesson
 plan is only a good deed once a real teacher teaches it (or a real repository accepts it for reuse),
 not when it is merely authored.
 
@@ -69,7 +69,7 @@ not when it is merely authored.
   hubs, etc.) — increased, attributed, verifiable reuse of content they created, which strengthens
   the open-content commons and the case for funding it.
 
-**Who must NOT be the primary beneficiary.** Per Elyos guardrails, this project must not primarily
+**Who must NOT be the primary beneficiary.** Per Hee-Lee Oss guardrails, this project must not primarily
 benefit a for-profit (e.g. a tutoring company, an edtech vendor, or a lesson marketplace). Outputs
 are openly licensed precisely to prevent capture.
 
@@ -240,14 +240,14 @@ is one lesson plan.
 
 ### Tech stack & key decisions
 
-- **Repo language/tooling:** TypeScript, ESM, pnpm workspaces (per Elyos conventions). Code is MIT;
+- **Repo language/tooling:** TypeScript, ESM, pnpm workspaces (per Hee-Lee Oss conventions). Code is MIT;
   content is CC-BY-4.0 (subject to upstream share-alike — see §Data).
 - **Source of truth:** Markdown + YAML front-matter (the canonical model serialized), so plans are
   diffable, reviewable in PRs, and trivially open. Generated PDFs/CC packages are build artifacts.
 - **Metadata:** schema.org/LRMI `LearningResource` + `alignmentObject` for standards; CASE for
   machine-readable framework alignment. Pinned spec versions recorded in a `specVersions` file.
 - **Agent-neutral:** all authoring guidance lives as project content/prompts in the repo; no
-  vendor/agent-specific logic. (Consistent with Elyos's agent-neutral-core rule — this project ships
+  vendor/agent-specific logic. (Consistent with Hee-Lee Oss's agent-neutral-core rule — this project ships
   content + adapters/tooling, not coding-agent integration.)
 - **Decision — wrap, don't relicense:** the composed plan's license is the most restrictive
   compatible license across its sources. Prefer CC-BY/CC0/PD sources so plans can be CC-BY-4.0;
@@ -269,7 +269,7 @@ and US-government works that are public domain. Accepted with consequences:
 
 - **CC-BY-SA** — derivatives must be ShareAlike-compatible. A plan wrapping SA content is licensed
   **CC-BY-SA-4.0**, not CC-BY. Mixing SA with incompatible licenses in one plan is disallowed.
-- **CC-BY-NC / CC-BY-NC-SA** — **non-commercial**. These are *not* fully "open" in the Elyos sense
+- **CC-BY-NC / CC-BY-NC-SA** — **non-commercial**. These are *not* fully "open" in the Hee-Lee Oss sense
   (they restrict commercial reuse and, for some, derivatives). Decision: keep them in a **clearly
   labelled, segregated NC tier**, never relicensed, never blended into a CC-BY plan, never the
   default. Each NC plan is conspicuously marked. (Conservative because NC creates downstream reuse
@@ -417,7 +417,7 @@ useful library.
 The itemized, schema-mapped backlog lives in **`TASKS.md`**: milestone task tables (`ID | Title |
 Type | Size | Risk | Deliverable | Depends on | Reviewer`), acceptance criteria for the most
 important tasks per milestone, each milestone's Definition of Done, a backlog of sized-but-unscheduled
-tasks, and one complete schema-valid example Task JSON. Tasks map to the Elyos Task schema in
+tasks, and one complete schema-valid example Task JSON. Tasks map to the Hee-Lee Oss Task schema in
 `packages/schema/src/schemas.ts`. All current tasks are `lane: donated`, `verifiedNeed: false`,
 `requestor: TO BE SECURED` until a partner is confirmed.
 
@@ -441,7 +441,7 @@ tasks, and one complete schema-valid example Task JSON. Tasks map to the Elyos T
   is what turns "authored" into "delivered."
 - **Partner / requestor** — **TO BE SECURED** (teacher, school/district curriculum lead, or OER
   repository).
-- **Elyos board/community** — adjudicates edge cases (e.g. a contested-subject plan) against the COI
+- **Hee-Lee Oss board/community** — adjudicates edge cases (e.g. a contested-subject plan) against the COI
   and refusal checklists.
 
 ---
@@ -455,7 +455,7 @@ tasks, and one complete schema-valid example Task JSON. Tasks map to the Elyos T
 - **Metadata/interop specs**: schema.org/LRMI, 1EdTech CASE, IMS Common Cartridge / Thin CC; pinned
   versions recorded.
 - **Archival**: Wayback Machine (license snapshots); optionally Zenodo (DOIs for published bundles).
-- **Elyos pieces**: the Task schema (`packages/schema`), the CLI workspace/PR flow (donated lane),
+- **Hee-Lee Oss pieces**: the Task schema (`packages/schema`), the CLI workspace/PR flow (donated lane),
   the outcome ledger / "delivered, not merged" definition, and the governance refusal/COI checklists.
 - **Tooling**: a readability metric library; a Markdown→PDF/HTML toolchain; an LRMI/CASE validator;
   pnpm/TypeScript/CI.
@@ -542,11 +542,11 @@ tasks, and one complete schema-valid example Task JSON. Tasks map to the Elyos T
 
 ## References
 
-- Elyos work rules and guardrails — `C:\code\elyos\CLAUDE.md`.
-- The Good Deed Definition (5 criteria + risk tiers) — `C:\code\elyos\docs\good-deed-definition.md`.
-- Elyos Task schema — `C:\code\elyos\packages\schema\src\schemas.ts`.
-- Elyos portfolio roadmap (this project listed in Track 3) — `C:\code\elyos\planning\ROADMAP.md`.
-- Sibling exemplar plan/tasks — `C:\code\elyos\planning\projects\open-data-datasheets\{PLAN,TASKS}.md`.
+- Hee-Lee Oss work rules and guardrails — `C:\code\hee-lee-oss\CLAUDE.md`.
+- The Good Deed Definition (5 criteria + risk tiers) — `C:\code\hee-lee-oss\docs\good-deed-definition.md`.
+- Hee-Lee Oss Task schema — `C:\code\hee-lee-oss\packages\schema\src\schemas.ts`.
+- Hee-Lee Oss portfolio roadmap (this project listed in Track 3) — `C:\code\hee-lee-oss\planning\ROADMAP.md`.
+- Sibling exemplar plan/tasks — `C:\code\hee-lee-oss\planning\projects\open-data-datasheets\{PLAN,TASKS}.md`.
 - Creative Commons license suite (CC0, CC-BY, CC-BY-SA, CC-BY-NC) — license terms and compatibility.
 - Common Core State Standards (CCSS) — © NGA Center & CCSSO, public license + attribution terms.
 - Next Generation Science Standards (NGSS) — CC-licensed by lead states; "NGSS" trademark guidance.
@@ -615,7 +615,7 @@ above. Each is a concrete change, not a vague aspiration.
 23. **Pipeline made a numbered, auditable flow.** Turned the architecture into a 10-step pipeline with
     gates at steps 3 and 7, so the process is checkable, not narrative.
 24. **Funded lane addressed and bounded.** Noted a possible future funded lane with a hard per-task
-    budget cap, consistent with Elyos's escrow rules, without making it required.
+    budget cap, consistent with Hee-Lee Oss's escrow rules, without making it required.
 25. **Open questions sharpened into decisions-needed.** Each open question now names who decides and by
     when (framework anchor before M1, NC tier to the board, partner-vs-repository to the steward in
     M0), instead of listing unowned uncertainties.

@@ -25,7 +25,7 @@
     "teacher-lesson-plans-template-001 — canonical lesson-plan schema and template",
     "PLAN.md — §Solution approach (Validation tooling component)",
     "PLAN.md — §Tech stack & key decisions",
-    "Elyos CLAUDE.md — pnpm build/test/lint requirement and DCO sign-off"
+    "Hee-Lee Oss CLAUDE.md — pnpm build/test/lint requirement and DCO sign-off"
   ],
   "output": "A merged PR adding a schema validator (TypeScript/ESM, pnpm workspace), golden fixtures (valid + invalid), and CI integration — so every lesson plan PR is automatically schema-validated.",
   "requestor": "TO BE SECURED",
